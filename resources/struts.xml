@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.action.excludePattern" value="/ws"></constant>
+
+    <package name="default" extends="struts-default">
+        <action name="" class="Action" method="execute">
+            <result name="index">/index.jsp</result>
+        </action>
+        <action name="getSuccess" class="Action" method="execute">
+            <result name="success">/success.jsp</result>
+            <result name="failure">/failure.jsp</result>
+        </action>
+    </package>
+</struts>
