@@ -31,7 +31,7 @@
 </form>
 <div id="div1">
   <s:property value="profiles" />
-</div>
+ </div>
 
 <script>
   $(document).ready(function () {
